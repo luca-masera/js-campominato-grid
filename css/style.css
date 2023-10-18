@@ -1,0 +1,19 @@
+
+#campo-gioco{
+    width: 650px;
+    height: 650px;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.cella.gioco{
+    border: 3px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+button{
+    margin: 0px auto;
+    display: block;
+}
