@@ -64,7 +64,7 @@ btnDifficolta2.addEventListener('click',function(){
 function creazioneQuadratino(campo,celle){
     // Creo una const per poi successivamente assegnargli classe css 
     const quadratino = document.createElement ('div');
-    //const quadratinoWidth = Math.sqrt(celle)
+    const quadratinoWidth = Math.sqrt(celle)
     //Aggiungo alla const la classe css
     quadratino.style.width =`calc(100% / ${celle})`;
     quadratino.style.height = quadratino.style.width
