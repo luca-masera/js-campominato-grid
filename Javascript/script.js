@@ -14,10 +14,10 @@ btn.addEventListener('click',function(){
  
  for(let i = 0; i < celle; i++){
 
-    console.log(i)
+    //console.log(i)
     // genero quadratino richiamando la funzione
     let quadratino = creazioneQuadratino(i);
-    console.log(quadratino)
+    //console.log(quadratino)
     //appendo il quadratino alla mia griglia
     grigliaGioco.append(quadratino);
 
@@ -33,6 +33,12 @@ function creazioneQuadratino(campo){
     //Aggiungo alla const la classe css
     quadratino.classList.add('cella-gioco');    
     quadratino.innerHTML = campo +1;
+    //Al click la cella cambia colore e il numero viene stampato in console
+    quadratino.addEventListener('click', function(){
+        quadratino.classList.add('backround');
+        console.log(quadratino.innerHTML)
+        
+    })
     
     return quadratino;
 
