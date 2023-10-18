@@ -16,9 +16,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(199, 248, 21);
+    color: rgb(236, 21, 183);
 }
 button{
     margin: 0px auto;
     display: block;
+}
+
+.backround{
+    background-color: aquamarine;
 }
